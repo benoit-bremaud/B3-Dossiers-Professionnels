@@ -32,6 +32,26 @@ B3-Dossiers-Professionnels/
 **Date limite de remise des fichiers PDF :** dimanche 29 juin à **23h42 précises**
 Les fichiers finaux doivent être à jour dans ce dépôt GitHub à cette date et heure limite, sans exception.
 
+## Génération automatisée des PDF
+
+Pour faciliter la conversion des fichiers `.md` en `.pdf`, le fichier `Makefile` peut être utilisé à la racine du dépôt.
+
+### Commandes disponibles :
+
+```bash
+make projet    # Génère le fichier prenom-nom-dossier-projet.pdf
+make pro       # Génère le fichier prenom-nom-dossier-pro.pdf
+make resume    # Génère le fichier prenom-nom-resume.pdf
+make all       # Génère les trois fichiers PDF d’un coup
+make clean     # Supprime tous les PDF générés
+```
+
+> Prérequis : la présence de `pandoc` et `texlive-xetex` installés sur un système Ubuntu
+>
+> ```bash
+> sudo apt install pandoc texlive-xetex
+> ```
+
 ## Remarques
 
 * Ce dépôt est public uniquement pour répondre aux exigences du centre de formation.
