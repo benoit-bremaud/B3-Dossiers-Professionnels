@@ -1,0 +1,50 @@
+# Fichiers système Linux
+*~
+
+# Fichiers temporaires générés par éditeurs (Gedit, Vim, VSCode, etc.)
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.backup
+
+# LibreOffice / Word
+~$*
+*.lock~
+
+# LaTeX (si utilisé)
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Répertoires de build ou d’exports
+build/
+output/
+dist/
+
+# PDF générés temporairement (sauf ceux à la racine du dépôt)
+sources/*.pdf
+sources/**/*.pdf
+
+# Archives compressées
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Éditeurs de code
+.vscode/
+.idea/
+
+# Node / Python (au cas où)
+node_modules/
+__pycache__/
+.env
